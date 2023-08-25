@@ -10,6 +10,7 @@ export function classNames(cls: string, mods?: Mods, additional?: string[]): str
     })
     .map(([classKey]) => classKey);
 
+  console.log(includedClassesFromMods)
 
-  return [cls, ...includedClassesFromMods, ...(additional ?? [])].join(' ');
+  return [cls, ...includedClassesFromMods, ...additional].join(' ');
 }

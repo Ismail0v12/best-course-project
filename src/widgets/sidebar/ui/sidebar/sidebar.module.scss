@@ -1,0 +1,23 @@
+.sidebar {
+  position: relative;
+  background-color: var(--inverted-bg-color);
+  width: var(--sidebar-width);
+  padding: 20px;
+  transition: width 0.3s ease;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.togglers {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  gap: 20px;
+}

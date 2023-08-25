@@ -20,7 +20,13 @@
     // console.log(Moment)
     // с флагом результат [object, object]
     // console.log(Moment)
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*", "node_modules"
+      ]
+    }
   },
   "ts-node": {
     "compilerOptions": {

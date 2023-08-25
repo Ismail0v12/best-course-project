@@ -1,11 +1,3 @@
-import React from 'react';
+import {lazy} from "react";
 
-const AboutPage = () => {
-  return (
-    <div>
-      Hello ABOUT PAGE
-    </div>
-  );
-};
-
-export default AboutPage;
+export const AboutPage = lazy(() => import('./ui/about-page'));

@@ -4,6 +4,7 @@ export interface BuildPaths {
   readonly entry: string;
   readonly build: string;
   readonly html: string;
+  readonly src: string;
 }
 
 export interface BuildOptions {
