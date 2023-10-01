@@ -1,7 +1,8 @@
 module.exports = {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -50,6 +51,7 @@ module.exports = {
     "semi": [
       "error",
       "always"
-    ]
+    ],
+    "max-len": ["error", {"ignoreComments": true, "code": 100}]
   }
 };
