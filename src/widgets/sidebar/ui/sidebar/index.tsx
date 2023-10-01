@@ -11,7 +11,7 @@ export const Sidebar: FC<SidebarProps> = (props) => {
   const [collapsed, setCollapsed] = useState(false);
   const toggleCollapse = () => {
     setCollapsed((prev) => !prev);
-  }
+  };
   return (
     <div
       className={classNames(cls.sidebar, {[cls.collapsed]: collapsed}, [])}
@@ -23,5 +23,5 @@ export const Sidebar: FC<SidebarProps> = (props) => {
         <LangSwitcher/>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import {FC} from "react";
 import {classNames} from "shared/lib/classNames";
 import cls from "./lang-switcher.module.scss";
 
@@ -14,8 +14,8 @@ export const LangSwitcher: FC<ThemeSwitcherProps> = (props) => {
   const {clazz, ...others} = props;
 
   const toggleLang = () => {
-    i18n.changeLanguage(i18n.language === 'ru' ? "en" : "ru")
-  }
+    i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
+  };
 
   return (
     <Button
@@ -24,7 +24,7 @@ export const LangSwitcher: FC<ThemeSwitcherProps> = (props) => {
       className={classNames(cls.lang, {}, [clazz])}
       {...others}
     >
-      {t('lang')}
+      {t("lang")}
     </Button>
-  )
-}
+  );
+};

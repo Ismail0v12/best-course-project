@@ -1,4 +1,3 @@
-import React from 'react';
 import {useTheme} from "app/providers/theme-provider";
 import {classNames} from "shared/lib/classNames";
 

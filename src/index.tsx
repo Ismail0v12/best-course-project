@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {ThemeContextProvider} from "app/providers/theme-provider";
 
 import "shared/config/i18next";
-import './app/styles/index.scss'
+import "./app/styles/index.scss";
 
 const root = createRoot(document.getElementById("root") as HTMLDivElement);
 
@@ -14,4 +14,4 @@ root.render(
       <App/>
     </ThemeContextProvider>
   </BrowserRouter>
-)
+);

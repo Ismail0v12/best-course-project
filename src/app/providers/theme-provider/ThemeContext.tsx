@@ -1,4 +1,4 @@
-import React, {createContext, Dispatch, FC, ReactNode, SetStateAction, useMemo, useState} from "react";
+import {createContext, Dispatch, FC, ReactNode, SetStateAction, useMemo, useState} from "react";
 
 export const enum THEME {
   LIGHT = "light",
@@ -12,7 +12,7 @@ interface ThemeContextProps {
   setTheme?: Dispatch<SetStateAction<THEME>>;
 }
 
- const ThemeContext = createContext<ThemeContextProps>({});
+const ThemeContext = createContext<ThemeContextProps>({});
 
 
 export const ThemeContextProvider: FC<{ children: ReactNode }> = ({children}) => {
@@ -21,9 +21,9 @@ export const ThemeContextProvider: FC<{ children: ReactNode }> = ({children}) =>
 
   const defaultProps = useMemo(() => ({
     theme, setTheme
-  }), [theme])
+  }), [theme]);
 
-  return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>
-}
+  return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;
+};
 
-export default ThemeContext
+export default ThemeContext;
