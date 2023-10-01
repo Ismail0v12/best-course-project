@@ -1,3 +1,4 @@
+export {Loader} from "shared/ui/loader";
 export {Button, ButtonTheme} from "./app-button";
 export {AppLink} from "./app-link";
 export {ThemeSwitcher} from "./theme-switcher";

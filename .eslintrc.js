@@ -53,5 +53,8 @@ module.exports = {
       "always"
     ],
     "max-len": ["error", {"ignoreComments": true, "code": 100}]
+  },
+  globals: {
+    __IS__DEV: true
   }
 };
